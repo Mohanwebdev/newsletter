@@ -59,7 +59,7 @@ app.get("/failure", function(req, res) {
   res.redirect("/");
 });
 
-app.listen(process.env.PORT,function(){
+app.listen(process.env.PORT||3000,function(){
     console.log("server is started at port 3000");
 });
 
